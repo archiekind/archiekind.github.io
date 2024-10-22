@@ -1,7 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>Webpage</head>
-    <body>
-        <h1>Webpage</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Name - Personal Website</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #5567DD;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        nav {
+            margin: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #5567DD;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: #3949AB;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #5567DD;
+        }
+
+        section p {
+            max-width: 600px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3949AB;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Profile Image Styling */
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h2>About Me</h2>
+        <p>Hi, I'm [Your Name], a [Your Profession] passionate about [Your Passion]. 
+           I love working with [Technologies] and am constantly learning new things to improve my skills. 
+           Welcome to my personal website!</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p>I've worked on various exciting projects ranging from web development to AI and robotics. 
+           Take a look at some of my favorite projects below!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Feel free to reach out to me via email at <a href="mailto:youremail@example.com">youremail@example.com</a>. 
+           You can also find me on GitHub, LinkedIn, and Twitter!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name - All Rights Reserved</p>
+    </footer>
+</body>
 </html>
