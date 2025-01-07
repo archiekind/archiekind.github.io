@@ -7,133 +7,129 @@
     <link href='https://fonts.googleapis.com/css?family=DM Serif Text' rel='stylesheet'>
     <title>Archie Kind</title>
     <style>
-        body {
-            font-family: 'DM Serif Text', sans-serif;
-            background-color: #FAF3E0;
-            color: #5C4033;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            text-align: center;
-            padding-bottom: 25px;
+        :root {
+            --primary-color: #f8f0e8;
+            --secondary-color: #2c1810;
+            --accent-color: #d4a373;
+            --text-color: #463f3a;
+            --link-color: #996043;
+            --section-padding: 2rem;
+            --max-width: 800px;
         }
 
-        h1, h2, h3, h4, h5, h6 {
-            color: #8C3B24;
-            margin-bottom: 1rem;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--primary-color);
+            padding: 2rem 1rem;
+        }
+
+        header {
             text-align: center;
+            padding: var(--section-padding) 0;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
         }
 
         h2 {
             font-size: 2rem;
-            font-weight: bold;
-            text-transform: uppercase;
+            color: var(--secondary-color);
             margin-bottom: 1.5rem;
+            font-weight: 600;
         }
 
         h3 {
-            font-size: 1.75rem;
-            font-style: italic;
-            margin-bottom: 1.2rem;
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin: 2rem 0 1rem 0;
+            font-weight: 500;
+        }
+
+        section {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: var(--section-padding) 0;
+            border-bottom: 1px solid var(--accent-color);
+        }
+
+        section:last-child {
+            border-bottom: none;
         }
 
         p {
-            width: 60%;
-            text-align: center;
-            margin: auto;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
         }
 
         a {
-            color: #D9822B;
+            color: var(--link-color);
             text-decoration: none;
-            transition: color 0.3s ease;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
         }
 
         a:hover {
-            color: #A65C1A;
+            border-color: var(--link-color);
         }
 
-        .container {
-            max-width: 50%;
-            margin: 0 auto;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        header {
-            background-color: #F4E1D2;
-            padding: 1rem 0;
-            text-align: center;
-            border-bottom: 2px solid #E4B29A;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        nav {
-            margin-top: 1rem;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-        }
-
-        main {
-            margin: 2rem 0;
-            text-align: center;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #E4B29A;
-            color: #FFF5EB;
-            border-top: 2px solid #D9822B;
-        }
-
-        button {
-            background-color: #D9822B;
-            color: #FFF5EB;
-            border: none;
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #A65C1A;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin: 0.5rem 0;
-            border: 1px solid #E4B29A;
-            border-radius: 5px;
-        }
-
-        img {
+        .profile-pic {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            margin-top: 2rem;
+            object-fit: cover;
+            margin: 0 auto 2rem auto;
+            display: block;
+            border: 3px solid var(--accent-color);
+        }
+
+        #about {
+            text-align: center;
+        }
+
+        #contact {
+            text-align: center;
+            background-color: rgba(212, 163, 115, 0.1);
+            padding: 3rem 1rem;
+            border-radius: 8px;
         }
 
         @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                gap: 0.5rem;
+            :root {
+                --section-padding: 1.5rem;
+            }
+
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            .profile-pic {
+                width: 150px;
+                height: 150px;
             }
         }
     </style>
